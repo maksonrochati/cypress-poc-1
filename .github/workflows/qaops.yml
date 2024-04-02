@@ -3,16 +3,20 @@ name: Cypress Tests Poc 1
 on: 
     #push
 
-    #workflow_dispatch:
+    workflow_dispatch:
     workflow_call:
-        inputs:
-            run-name:
-                required: false
-                description: 'Test'
-                default: 'Teste completo'
-                type: string
+        #inputs:
+            #run-name:
+                #required: false
+                #description: 'Test'
+                #default: 'Teste completo'
+                #type: string
 
 jobs:
+
+  call-workflow:
+    uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
+    
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
