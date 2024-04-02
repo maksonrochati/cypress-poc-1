@@ -15,9 +15,9 @@ on:
 jobs:
 
   call-workflow:
-    uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
-    secrets:
-        GH_TOKEN: ${{ secrets.GH_TOKEN }}
+    uses: cypress-poc-2/.github/workflows/qa.yml@main
+    with:
+        secrets: inherit
     
   cypress-run:
     runs-on: ubuntu-22.04
