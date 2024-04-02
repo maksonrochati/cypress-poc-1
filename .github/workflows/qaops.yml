@@ -17,8 +17,7 @@ jobs:
   call-workflow:
     uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
     with:
-        runs-on: ubuntu-22.04
-        secrets: inherit
+        path: cypress-poc-2/.github/workflows/qa.yml
     
   cypress-run:
     runs-on: ubuntu-22.04
