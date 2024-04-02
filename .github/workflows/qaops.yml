@@ -17,7 +17,7 @@ jobs:
   call-workflow:
     uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
     with:
-        path: cypress-poc-2/.github/workflows/qa.yml
+        path: cypress-poc-1/.github/workflows/qa.yml
     
   cypress-run:
     runs-on: ubuntu-22.04
