@@ -17,7 +17,7 @@ jobs:
   calling-workflow:
     uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
     with:
-        working-directory: cypress/e2e/teste/todo.cy.js
+        working-directory: /home/runner/work/cypress-poc-2/cypress-poc-2/cypress/e2e/teste/todo.cy.js
     
     
   cypress-run:
