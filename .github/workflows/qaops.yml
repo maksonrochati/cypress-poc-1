@@ -17,14 +17,11 @@ jobs:
   calling-workflow:
     uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
     with:
-        config-path: cypress/e2e/teste/todo.cy.js
+        command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
+    
     
   cypress-run:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-      # Install NPM dependencies, cache them correctly
-      # and run all Cypress tests
-      #- name: Cypress run
-       # uses: cypress-io/github-action@v6
