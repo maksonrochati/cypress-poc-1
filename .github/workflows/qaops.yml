@@ -16,6 +16,8 @@ jobs:
 
   calling-workflow:
     uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@poc2
+    with:
+      config-path: .github/qaops.yml
    
     
     
