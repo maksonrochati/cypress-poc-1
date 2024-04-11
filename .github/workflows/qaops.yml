@@ -29,4 +29,10 @@ jobs:
             repository: maksonrochati/cypress-poc-2
             ref: poc2
             path: cypress/e2e/teste/todo.cy.js
+
+         
+     - name: Cypress run
+       uses: cypress-io/github-action@v5
+       with:
+            command: npx cypress run --spec "cypress/e2e/teste/todo.cy.js"
        
