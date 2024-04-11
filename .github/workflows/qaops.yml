@@ -14,11 +14,11 @@ on:
 
 jobs:
 
-  calling-workflow:
-            uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@poc2
-            with:
+  #calling-workflow:
+            #uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@poc2
+            #with:
                 #repository: maksonrochati/cypress-poc-2
-                config-path: .github/workflows/qa.yml
+                #config-path: .github/workflows/qa.yml
     
   cypress-run:
     runs-on: ubuntu-22.04
@@ -26,6 +26,7 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v4
        with:
-            repository: maksonrochati/cypress-poc-2
-            path: .github/workflows/qa.yml
+            repository: maksonrochati/cypress-poc-2/.github/workflows/qa.yml
+            ref: poc2
+            path: cypress/e2e/teste/todo.cy.js
        
