@@ -16,9 +16,9 @@ jobs:
 
   calling-workflow:
             uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@main
-            with:
-                #repository: maksonrochati/cypress-poc-2
-                config-path: cypress/e2e/teste/todo.cy.js
+            # with:
+            #     #repository: maksonrochati/cypress-poc-2
+            #     config-path: cypress/e2e/teste/todo.cy.js
   # cypress-run:
   #   runs-on: ubuntu-22.04
   #   steps:
