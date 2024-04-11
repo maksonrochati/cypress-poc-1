@@ -14,8 +14,8 @@ on:
 
 jobs:
 
-  #calling-workflow:
-            #uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@poc2
+  calling-workflow:
+            uses: maksonrochati/cypress-poc-2/.github/workflows/qa.yml@poc2
             #with:
                 #repository: maksonrochati/cypress-poc-2
                 #config-path: .github/workflows/qa.yml
@@ -32,8 +32,8 @@ jobs:
 
          
      - name: Cypress run
-       uses: cypress-io/github-action@v5
+       uses: ./
        with:
-            repository: maksonrochati/cypress-poc-2
-            ref: poc2
+            working-directory: cypress/e2e/teste/todo.cy.js
+            
       
