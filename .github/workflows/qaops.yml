@@ -26,7 +26,7 @@ jobs:
      - name: Checkout
        uses: actions/checkout@v4
        with:
-            repository: maksonrochati/cypress-poc-2/.github/workflows/qa.yml
+            repository: maksonrochati/cypress-poc-2
             ref: poc2
             path: cypress/e2e/teste/todo.cy.js
        
