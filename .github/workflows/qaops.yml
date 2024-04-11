@@ -20,20 +20,16 @@ jobs:
                 #repository: maksonrochati/cypress-poc-2
                 config-path: .github/workflows/qa.yml
     
-  cypress-run:
-    runs-on: ubuntu-22.04
-    steps:
-     - name: Checkout
-       uses: actions/checkout@v4
-       with:
-            repository: maksonrochati/cypress-poc-2
-            ref: poc2
-            path: cypress/e2e/teste/todo.cy.js
+  # cypress-run:
+  #   runs-on: ubuntu-22.04
+  #   steps:
+  #    - name: Checkout
+  #      uses: actions/checkout@v4
+  #      with:
+  #           repository: maksonrochati/cypress-poc-2
+  #           ref: poc2
+  #           path: cypress/e2e/teste/todo.cy.js
 
-         
-     - name: Cypress run
-       uses: ./
-       with:
-            working-directory: cypress/e2e/teste/todo.cy.js
+    
             
       
